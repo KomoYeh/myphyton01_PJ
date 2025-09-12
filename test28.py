@@ -1,16 +1,12 @@
-def funcA(n1, n2) :
-    print('hehe')
-    return n1 + n2
+# Function คือ การทำงานหนึ่งๆ จะไม่ทำงานหากไม่เรียกใช้ (call function)
 
-def funcB(data1, data2, data3):
-    result = data1 * data2
-    return result, data3 + result
+# Function มีที่มาที่ไปยังไงบ้าง
+# - Standard Function/Build-in Function มากับภาษาโปรแกรม
+# - User Defined Function คือ ฟังก์ชันที่ Dev สร้างขึ้นเอง
+# - Third Party Function คือ ฟังก์ชันที่มีคนอื่นสร้างไว้
 
-print(funcA(10, 20))
-
-iot01 = funcA(5, 10)
-print(iot01)
-
-aa, bb = funcB(10, 20, 30)
-print(aa)
-print(bb)
+# Function มี 4 ประเภท
+# 1. no parameter no return
+# 2. have parameter no return
+# 3. no parameter have return
+# 4. have parameter have return

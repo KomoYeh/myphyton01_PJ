@@ -1,32 +1,27 @@
-def showpgname():
-    print("----------------------")
-    print("cabondioxide_calculator")
-    print("----------------------")
+# 1. function: no parameter no return
+# parameter = ตัวแปรทีประเภทหนึ่ง ที่ใช้ได้เฉพาะในฟังก์ชันนั้นๆ เท่านั้น เขียนอยู่ในวงเล็บหลังชื่อฟังก์ชัน
+# return = คำสั่งที่บ่งบองถึงการจบการทำงานชองฟังก์ชัน และส่งค่าที่อยู่หลัง return กลับไปยังจุดที่เรียกใช้ฟังก์ชัน(ถ้ามี)
 
-def showresult(car_owner, car_number, car_carbon, status):
-    print(f'Owner: {car_owner}')
-    print(f'Car Number: {car_number}')
-    print(f'Carbon Emission: {car_carbon} g/km')
-    print(f'Status: {status}')
+'''
+def func_name( ) :
+    คำสั่ง
+    คำสั่ง
+    ......
+'''
 
+print('Wee...')
 
-def inputData():
-    car_owner = input("Enter your name: ")
-    car_number = input("Enter your car number: ")
-    car_carbon = float(input("Enter your car carbon dioxide emission (grams/km): "))
-    return car_owner, car_number, car_carbon
+def showHi():
+    print('Hi...')
 
-def calculateCarbonEmission(car_owner, car_number, car_carbon) :
-    if car_carbon > 678.55 :
-        #ผ่าน
-        showresult(car_owner, car_number, car_carbon, 'Pass')
-    else :
-        #ไม่ผ่าน
-        showresult(car_owner, car_number, car_carbon, 'Fail')
+print('Wow...')
 
-def showpa():
-    print("-----------------------")
+def showHey():
+    print('Hey...')
 
-showpa()
-showpgname()
-showpa()
+print('Woo...')
+
+showHi()
+showHi()
+showHey()
+showHey()

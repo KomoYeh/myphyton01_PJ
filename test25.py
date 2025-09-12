@@ -1,16 +1,18 @@
-print('wow')
+#สร้างโปรแกรมคำนวณอายุของจากปีเกิด (พ.ศ.) ของพนักงานโรงงานแห่งหนึ่ง โดยป้อนชื่อและปีเกิดทางแป้นพิมพ์ 
+#ทั้งนี้โปรแกรมจะหยุดทำงานก็ต่อเมื่อป้อนชื่อพนักงาน เป็น SAU ก็จะหยุดทำงาน
+from datetime import datetime
 
-def showHi():
-    print('hi')
+print('-------------------')
+print('โปรแกรมคำนวณอายุของพนักงานโรงงาน')
+print('-------------------')
 
-print('woo')
-
-def showhey():
-    print('hey')
-
-print('wee')
-
-showHi()
-showHi()
-showhey()
-showHi()
+while True :
+    name = input('ป้อนชื่อพนักงาน : ')
+    if name.upper() == 'SAU' :
+        break
+    year = int(input('ป้อนปีเกิด (พ.ศ.) : '))
+    age = (datetime.now().year + 543) - year
+    print(f'คุณ {name} อายุ {age} ปี')
+    print('-------------------')
+    
+print('-------------------')
